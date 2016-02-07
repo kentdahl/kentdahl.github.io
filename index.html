@@ -3,34 +3,53 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
 
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
     <title>Kentdahl.GitHub.io by kentdahl</title>
   </head>
 
   <body>
+    <a id="forkme_banner" href="https://github.com/kentdahl">View on GitHub</a>
+    <div class="shell">
 
-    <header>
-      <div class="container">
-        <h1>Kentdahl.GitHub.io</h1>
-        <h2>Kent Dahl @ GitHub</h2>
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Kentdahl.GitHub.io</h1>
+            <h2>Kent Dahl @ GitHub</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
 
-        <section id="downloads">
-          <a href="https://github.com/kentdahl" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
+      <div id="no-downloads">
+        <span class="inner">
+        </span>
       </div>
-    </header>
 
-    <div class="container">
+
+      <span class="banner-fix"></span>
+
+
       <section id="main_content">
         <h3>
 <a id="kent-dahl--github" class="anchor" href="#kent-dahl--github" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Kent Dahl @ GitHub</h3>
 
 <ul>
-<li><a href="/nektar-nuby">Elixir introdusjon</a></li>
+<li><a href="/nektar-nuby">Elixir introduksjon</a></li>
 <li><a href="/RubyNuby">Ruby Nuby - introduksjon</a></li>
 </ul>
 
@@ -42,6 +61,19 @@
 <li><a href="http://www.rubendahl.no">Rubendahl Consulting AS</a></li>
 </ul>
       </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>Projects by <a href="https://github.com/kentdahl">kentdahl</a> can be found on <a href="https://github.com/kentdahl">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
     </div>
 
     
